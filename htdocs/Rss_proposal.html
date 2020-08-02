@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>proposal</title>
+    <br>
+    <center>
+        <a href="./Rss_searchsong.html"><img id="bubble_logo" border="0" src="./bubble_logo.png" alt="버블로고"
+                style="width:150px; height:50px;"></a> <!--이미지를 클릭하면 Rss_searchsong.html로 이동-->
+    </center>
+    <center>
+        <h1>건의하기</h1>
+        <h3>듣고 싶은 노래가 있거나,</h3>
+        <h3>추천하고 싶은 노래 목록을 보내주시면, 검토 후 추가해드립니다.</h3>
+        <h3>그 외 다른 건의사항도 환영!</h3>
+    </center>
+
+    <script>
+        function checkform() { //checkform 함수
+            if (!document.proposal_form.user_proposal.value) { //건의사항 값이 없으면
+                alert('건의사항이 입력되지 않았습니다.'); 
+                document.proposal_form.user_proposal.focus(); //알림과 함께 건의사항 칸을 focus해줌
+                return;
+            }
+
+            document.proposal_form.submit(); //조건문에 해당하지 않으면 제출
+        }
+    </script>
+</head>
+
+<body>
+    <form name="proposal_form" action="Rss_proposal.php" method="post"> <!--Rss_proposal.php로 제출함-->
+        <center>
+            <label for="">건의사항 입력: </label> <input style="width:600px; height:200px;" type="text"
+                name="user_proposal"><br>
+            <br><input type="button" value="제출하기" onClick="checkform()"> <!--제출하기 버튼을 누르면 checkform() 함수 실행-->
+        </center>
+    </form>
+</body>
+
+</html>

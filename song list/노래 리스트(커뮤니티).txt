@@ -1,0 +1,55 @@
+insert into user_tracklist values('ARMY', '작은 것들을 위한 시 (Boy With Luv) ', '방탄소년단', '2019-04-21', '랩/힙합', '남성', '그룹');
+insert into user_tracklist values('ARMY', 'IDOL', '방탄소년단', '2018-08-24', '랩/힙합', '남성', '그룹');
+insert into user_tracklist values('ARMY', '봄날', '방탄소년단', '2017-02-13', '댄스', '남성', '그룹');
+insert into user_tracklist values('ARMY', 'FAKE LOVE', '방탄소년단', '2018-05-18', '랩/힙합', '남성', '그룹');
+insert into user_tracklist values('ARMY', '전하지 못한 진심 (Feat. Steve Aoki)', '방탄소년단', '2018-05-18', '발라드', '남성', '그룹');
+insert into user_tracklist values('ARMY', 'Anpanman', '방탄소년단', '2018-05-18', '랩/힙합', '남성', '그룹');
+insert into user_tracklist values('ARMY', '피 땀 눈물', '방탄소년단', '2016-10-10', '랩/힙합', '남성', '그룹');
+insert into user_tracklist values('ARMY', '불타오르네 (FIRE)', '방탄소년단', '2016-05-02', '댄스', '남성', '그룹');
+insert into user_tracklist values('ARMY', 'I NEED U', '방탄소년단', '2015-04-29', '랩/힙합', '남성', '그룹');
+
+
+insert into user_tracklist values('Rain','비 오는 거리', '소울 스타', '2014-07-30', 'R&B/소울', '남성', '그룹');
+insert into user_tracklist values('Rain','비가 내려와', '지아,이현', '2015-04-08', '발라드', '혼성', '그룹');
+insert into user_tracklist values('Rain','Rainy', '어쿠루브', '2015-08-19', '인디', '남성', '솔로');
+insert into user_tracklist values('Rain','비가와', '소유,백현', '2017-02-14', '발라드', '혼성', '그룹');
+insert into user_tracklist values('Rain','우산이 두갠데', '윤딴딴', '2014-09-15', '인디', '남성', '솔로');
+insert into user_tracklist values('Rain','Rain drop', '아이유', '2010-06-03', '발라드', '여성', '솔로');
+insert into user_tracklist values('Rain','비가 오는 날엔', '비스트', '2011-05-12', 'R&B/소울', '남성', '그룹');
+insert into user_tracklist values('Rain','장마', '정인', '2011-04-05', 'R&B/소울', '여성', '솔로');
+insert into user_tracklist values('Rain','비', '폴킴', '2016-06-21', 'R&B/소울', '남성', '솔로');
+insert into user_tracklist values('Rain','Rain', '태연', '2016-02-03', '발라드', '여성', '솔로');
+insert into user_tracklist values('Rain','우산', '윤하', '2014-07-02', '발라드', '여성', '솔로');
+insert into user_tracklist values('Rain','잠 못 드는 밤 비는 내리고', '아이유', '2017-09-22', '발라드', '여성', '솔로');
+insert into user_tracklist values('Rain','비와 당신', '럼블피쉬', '2014-06-27', '발라드', '여성', '솔로');
+
+
+insert into user_tracklist values('infinite challenge','강북멋쟁이', '정형돈', '2013-01-25', '댄스', '남성', '솔로');
+insert into user_tracklist values('infinite challenge','키 작은 꼬마 이야기', '하하', '2007-09-04', '랩/힙합', '남성', '솔로');
+insert into user_tracklist values('infinite challenge','바람났어 (Feat. 박봄)', '박명수,G-DRAGON', '2011-07-02', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','압구정 날라리', '유재석,이적', '2011-07-02', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','정주나요', '정준하,스윗소로우', '2011-07-02', '발라드', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','죽을래 사귈래', '하하,10CM', '2011-07-02', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','맙소사', '황광희,태양,G-DRAGON', '2015-08-22', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','레옹', '박명수,아이유', '2015-08-22', '댄스', '혼성', '그룹');
+insert into user_tracklist values('infinite challenge','멋진헛간', '정형돈,혁오', '2015-08-22', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','냉면', '박명수,제시카', '2009-07-13', '댄스', '혼성', '그룹');
+insert into user_tracklist values('infinite challenge','영계백숙', '정준하,윤종신,애프터스쿨', '2009-07-13', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','더위 먹은 갈매기', '노홍철,노브레인', '2009-07-13', '댄스', '남성', '그룹');
+insert into user_tracklist values('infinite challenge','메뚜기월드', '유재석', '2013-01-25', '댄스', '남성', '솔로');
+insert into user_tracklist values('infinite challenge','그래, 우리 함께', '무한도전', '2013-11-02', '발라드', '남성', '그룹');
+
+
+insert into user_tracklist values('summer','한여름밤의 꿀', '산이,레이나', '2014-06-12', '랩/힙합', '혼성', '그룹');
+insert into user_tracklist values('summer','여름밤에 우린', '스탠딩 에그', '2016-08-03', '인디', '남성', '그룹');
+insert into user_tracklist values('summer','서울 밤 (Feat. 빈지노)', '어반자카파', '2019-06-13', 'R&B/소울', '혼성', '그룹');
+insert into user_tracklist values('summer','2411', '크러쉬', '2016-10-14', 'R&B/소울', '남성', '솔로');
+insert into user_tracklist values('summer','별자리', '10CM', '2017-09-01', '인디', '남성', '그룹');
+insert into user_tracklist values('summer','니가 보고싶은 밤', '윤딴딴', '2017-02-20', '인디', '남성', '솔로');
+insert into user_tracklist values('summer','밤이 되니까', '펀치', '2017-09-29', 'R&B/소울', '여성', '솔로');
+insert into user_tracklist values('summer','뜨거운 여름밤은 가고 남은 건 볼품없지만', '잔나비', '2016-08-04', '발라드', '남성', '그룹');
+insert into user_tracklist values('summer','그 해 여름', '써니힐', '2014-08-01', '발라드', '여성', '그룹');
+insert into user_tracklist values('summer','사랑했던걸까', '양다일', '2016-04-27', 'R&B/소울', '남성', '솔로');
+insert into user_tracklist values('summer','잠 못드는 밤 (Feat. 펀치)', 'Crush', '2014-08-06', 'OST', '남성', '솔로');
+insert into user_tracklist values('summer','새벽 4시', '10CM', '2010-04-22', '인디', '남성', '그룹');
+insert into user_tracklist values('summer','남아있어', '로꼬', '2016-11-04', '랩/힙합', '남성', '솔로');

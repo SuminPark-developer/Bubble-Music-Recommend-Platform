@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble tracklist2</title>
+    <br>
+    <center>
+        <a href="./Rss_searchsong.html"><img id="bubble_logo" border="0" src="./bubble_logo.png" alt="버블로고"
+            style="width:150px; height:50px;"></a> <!--이미지를 클릭하면 Rss_searchsong.html로 이동-->
+    </center>
+    <center>
+        <h1>당신을 기다린 시간의 이름을 난 청춘이라 지었어 리스트</h1>
+    </center>
+    <div align="right"><a href="./Rss_tracklist.html">My Bubble</a></div>
+    <div align="right"><a href="./Rss_main2.php">My page</a></div>
+    <div align="right"><a href="./Rss_MainPage.html">Log Out</a></div>
+    <style type="text/css">
+        table {
+        border: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        }
+
+        table td,
+        table th {
+        border: 1px solid;
+        padding: 2px 5px 2px 5px;
+        }
+
+        .text-center {
+        text-align: center;
+        }
+
+        .text-right {
+        text-align: right;
+        }
+
+        a {
+        color: #000000;
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        }
+    </style>
+    <script>
+        function btn() {
+        alert('노래를 듣습니다');
+        document.listen.submit();
+        }
+    </script>
+</head>
+
+    <body>
+    <center>
+        <form name="listen" action="Rss_temp.php" method="post">
+        <label for="">노래 제목: </label> <input type="text" name="listen_title"><br>
+        <br><input type="button" value="듣기" onClick="btn()">
+        </form>
+        <br>
+        <?php
+        /* Load DB */
+        $conn = mysqli_connect('localhost', 'root', '0000', 'recommend_song');
+        if ( !$conn ) die('DB Error');
+        
+        /* Set to UTF-8 Encoding */
+        mysqli_query($conn, 'set session character_set_connection=utf8;');
+        mysqli_query($conn, 'set session character_set_results=utf8;');
+        mysqli_query($conn, 'set session character_set_client=utf8;');
+
+        /* Load data */
+        $query = "select * from song_list where DATE(Release_date) BETWEEN '1980-01-01' AND '2003-01-01' order by rand() limit 10;";
+        $result = mysqli_query($conn, $query);
+
+        echo "<table class='text-center'><tr>" .
+        "<th>노래 제목</th><th>가수</th><th>발매일</th><th>장르</th><th>성별</th><th>솔로/그룹</th>" .
+        "</tr>";
+        while ($row = mysqli_fetch_array($result)) {
+        echo "<tr><td>" . $row['Title'] . "</td>" .
+            '<td>' . $row['Artist'] . '</td>' .
+            '<td>' . $row['Release_date'] . '</td>' .
+            '<td>' . $row['Genre'] . '</td>' .
+            '<td>' . $row['Gender'] . '</td>' .
+            '<td>' . $row['Group'] . '</td>' .'</div></tr>';
+        }
+        echo '</table>';
+        mysqli_close($conn);
+        ?>
+    </center>
+    <br>
+    <div align="center"><a href="./Rss_searchsong.html">노래 검색창으로 돌아가기</a></div>
+</body>
+
+</html>

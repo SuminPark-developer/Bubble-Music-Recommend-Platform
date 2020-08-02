@@ -1,0 +1,21 @@
+
+insert into song_list values('어쩌다 마주친 그대', '송골매', '1982-01-15', '락', '남성', '그룹');
+insert into song_list values('너의 의미', '산울림', '1984-07-20', '락', '남성', '그룹');
+insert into song_list values('그대에게', '신해철', '1991-03-20', '락', '남성', '솔로');
+insert into song_list values('보라빛 향기', '강수지', '1990-04-01', '댄스', '여성', '솔로');
+insert into song_list values('사랑했지만', '김광석', '1996-08-13', '포크', '남성', '솔로');
+insert into song_list values('서른 즈음에', '김광석', '1996-08-13', '포크', '남성', '솔로');
+insert into song_list values('가을 아침', '양희은', '1991-10-01', '포크', '여성', '솔로');
+insert into song_list values('너에게 난, 나에게 넌', '자전거 탄 풍경', '2001-04-01', '포크', '남성', '그룹');
+insert into song_list values('소녀', '이문세', '1985-11-20', '발라드', '남성', '솔로');
+insert into song_list values('아로하', '쿨', '2001-12-01', '발라드', '혼성', '그룹');
+insert into song_list values('붉은 노을', '이문세', '1988-09-15', '락', '남성', '솔로');
+insert into song_list values('칵테일 사랑', '마로니에', '1994-03-01', '댄스', '혼성', '그룹');
+insert into song_list values('리듬 속의 그 춤을', '김완선', '1987-05-07', '댄스', '여성', '솔로');
+insert into song_list values('어젯밤 이야기', '소방차', '1987-04-20', '댄스', '남성', '그룹');
+insert into song_list values('매일 그대와', '들국화', '1985-09-01', '락', '남성', '그룹');
+insert into song_list values('잠 못 드는 밤 비는 내리고', '김건모', '1992-02-01', '발라드', '남성', '솔로');
+insert into song_list values('마법의 성', '더 클래식', '1994-07-20', '발라드', '남성', '그룹');
+insert into song_list values('그대안의 블루', '김현철,이소라', '1992-01-01', 'OST', '혼성', '그룹');
+insert into song_list values('이밤이 지나면', '임재범', '1991-10-01', '발라드', '남성', '솔로');
+insert into song_list values('Never Ending Story', '부활', '2002-09-01', '락', '남성', '그룹');

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>add_song</title>
+    <br>
+    <center>
+        <a href="./Rss_admin_page.html"><img id="bubble_logo" border="0" src="./bubble_logo.png" alt="버블로고"
+                style="width:150px; height:50px;"></a> <!--이미지를 클릭하면 Rss_admin_page.html로 이동-->
+    </center>
+    <center>
+        <h1>노래 추가하기</h1>
+    </center>
+    <style type="text/css">
+        table {
+            border: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        table td,
+        table th {
+            border: 1px solid;
+            padding: 2px 5px 2px 5px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function checkform() { //checkform() 함수
+            if (!document.addsong_form.addsong_title.value) { //노래 제목이 입력되지 않으면
+                alert('노래 제목이 입력안됨'); //알림을 띄움
+                document.addsong_form.user_id.focus(); //focus를 노래 제목 칸에 해줌
+                return;
+            }
+
+            else if (!document.addsong_form.addsong_artist.value) { //가수가 입력되지 않으면
+                alert('가수가 입력안됨'); //알림을 띄움
+                document.addsong_form.user_password.focus(); //focus를 가수 칸에 해줌
+                return;
+            }
+
+            else if (!document.addsong_form.addsong_release_date.value) { //발매일이 입력되지 않으면
+                alert('발매일이 입력안됨'); //알림을 띄움
+                document.addsong_form.user_name.focus(); //focus를 발매일 칸에 해줌
+                return;
+            }
+
+            else if (!document.addsong_form.addsong_genre.value) { //장르가 입력되지 않으면
+                alert('장르가 입력안됨'); //알림을 띄움
+                document.addsong_form.user_telelphone.focus(); //focus를 장르 칸에 해줌
+                return;
+            }
+
+            else if (!document.addsong_form.addsong_gender.value) { //성별이 입력되지 않으면
+                alert('성별이 입력안됨'); //알림을 띄움
+                document.addsong_form.user_password.focus(); //focus를 성별 칸에 해줌
+                return;
+            }
+
+            else if (!document.addsong_form.addsong_group.value) { //그룹여부가 입력되지 않으면
+                alert('그룹여부가 입력안됨'); //알림을 띄움
+                document.addsong_form.user_password.focus(); //focus를 그룹여부 칸에 해줌
+                return;
+            }
+
+            document.addsong_form.submit(); //위 조건문에 해당하지 않으면 제출
+        }
+    </script>
+</head>
+
+<body>
+    <form name="addsong_form" action="Rss_admin_addsong.php" method="post"> <!--양식을 Rss_admin_addsong.php로 보냄-->
+        <center>
+            <label for="">노래 제목: </label> <input type="text" name="addsong_title"><br> <!--노래 제목 입력칸-->
+            <label for="">가수: </label> <input type="text" name="addsong_artist"><br> <!--가수 입력칸-->
+            <label for="">발매일: </label> <input type="text" name="addsong_release_date"><br> <!--발매일 입력칸-->
+            <label for="">장르: </label> <input type="text" name="addsong_genre"><br> <!--장르 입력칸-->
+            <label for="">성별: </label> <input type="text" name="addsong_gender"><br> <!--성별 입력칸-->
+            <label for="">그룹여부: </label> <input type="text" name="addsong_group"><br> <!--그룹여부 입력칸-->
+            <br><input type="button" value="노래 등록하기" onClick="checkform()"> <!--노래 등록하기 버튼을 누르면 checkform() 함수 실행-->
+        </center>
+    </form>
+    <br>
+    <div align="center"><a href="./Rss_admin_page.html">관리자페이지로 돌아가기</a></div> <!--버튼을 클릭하면 Rss_admin_page.html로 이동-->
+</body>
+
+</html>

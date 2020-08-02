@@ -1,0 +1,51 @@
+<body>
+<br>
+<center>
+    <a href="./Rss_admin_page.html"><img id="bubble_logo" border="0" src="./bubble_logo.png" alt="버블로고"
+        style="width:150px; height:50px;"></a> <!--이미지를 클릭하면 Rss_admin_page.html로 이동-->
+
+<center>
+    <h2> 회원 정보 관리 </h2>
+    <style type="text/css">
+        a {
+        color: #000000;
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        }
+    </style>
+    <table width="800" border="1">
+        <tr>
+        <td>아이디</td>
+        <td>비밀번호</td>
+        <td>이름</td>
+        <td>전화번호</td>
+        </tr>
+        <?
+        include './Rss_dbconn.php';
+
+        $query = "Select * from member"; 
+        $result = mysqli_query($conn, $query);
+        //member테이블 내용 전체를 불러옴
+
+        while ($row = mysqli_fetch_array($result)) {
+        echo"
+        <tr>
+            <td><a href='Rss_admin_content.php?id=$row[ID]'>$row[ID]</a></td> 
+            <td>$row[Password]</td>
+            <td>$row[Name]</td>
+            <td>$row[Tel]</td>
+        </tr>"; 
+        //아이디,비밀번호,이름,전화번호 정보를 출력함
+        //아이디 텍스트를 클릭하면 아이디 정보와 함께 Rss_admin_content.php로 이동
+        }
+
+        mysqli_close($conn);
+        ?>
+    </table>
+    <br><input type="button" value="관리자페이지로 돌아가기" onClick="location.href='Rss_admin_page.html'"> <!--버튼을 누르면 Rss_admin_page.html로 이동-->
+</center>
+
+</body>
