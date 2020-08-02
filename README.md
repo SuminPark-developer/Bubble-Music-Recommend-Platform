@@ -1,2 +1,2 @@
 # Bubble-Music-Recommend-Platform
-Music Recommend Platform used by mysql, php, html, css.
+Music Recommend Platform used by Apache, PHP, Mysql, HTML, CSS.
