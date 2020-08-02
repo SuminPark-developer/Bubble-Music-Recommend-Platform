@@ -2,6 +2,7 @@
 Music Recommend Platform used by Apache, PHP, Mysql, HTML, CSS.
 
 
+
 htdocs.zip (소스)파일을 압축해제 후, http://localhost/Rss_MainPage.html 에 접속한다.
 
 관리자 아이디 : admin

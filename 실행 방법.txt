@@ -1,0 +1,26 @@
+# Bubble-Music-Recommend-Platform
+버블 음악 추천 플랫폼은 Apache, PHP, MySQL, HTML, CSS를 통해 만들어졌습니다.
+APM(Apache + PHP + MySQL)이 설치된 환경에서 실행이 가능합니다.
+
+APM을 설치하는 방법에 대해선 https://developer-p.tistory.com/36 에서 설명드리겠습니다.
+
+
+# 아래 실행방법은 APM이 설치됐다는 가정하에 설명되어 있습니다.
+
+
+
+# htdocs.zip (소스)파일을 압축해제 후, http://localhost/Rss_MainPage.html 에 접속합니다.
+
+일반 회원으로 로그인 하기 위해선, 회원가입이 필요합니다.
+
+[관리자 계정]
+관리자 아이디 : admin
+관리자 비밀번호 : 0000
+
+
+
+# bubblemusic_2020-06-28.sql (덤프파일)실행 안될 시
+
+1. recommend_song이라는 데이터 베이스를 생성 후 db에 접속합니다.
+2. Bubble Music Recommend Platform.pdf 파일 내에 있는 테이블 소개(기술서)를 토대로 테이블을 만든 후,
+3. song list 폴더 내에 노래 리스트.txt 파일들을 복사 후 붙여넣기하면 노래db파일을 추가할 수 있습니다.
