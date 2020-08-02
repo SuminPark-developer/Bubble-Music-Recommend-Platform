@@ -4,12 +4,11 @@ It can run in an environment with APM(Apache + PHP + MySQL) installed.
 
 I'll explain how to install the APM at https://developer-p.tistory.com/36.
 
-
-# Below is a description under the assumption that the APM is installed.
-
+Below is a description under the assumption that the APM is installed.
 
 
-# http://localhost/Rss_MainPage.html after decompressing the htdocs.zip file.
+# How to execute
+http://localhost/Rss_MainPage.html after decompressing the htdocs.zip file.
 
 To log in as a regular member, you need to sign up as a member.
 
@@ -18,7 +17,7 @@ Administrator ID: admin
 Administrator Password : 0000
 
 
-# Bubblemusic_2020-06-28.sql (dump file) If not run,
+# If not run - Bubblemusic_2020-06-28.sql (dump file)
 
 1. Create a database called reminder_song and connect to db.
 2. Create a table based on the table introduction (technique) in the Bubble Music Recommend Platform.pdf file.
