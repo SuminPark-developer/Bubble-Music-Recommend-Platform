@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 * linguist-vendored
-*.apm linguist-vendored=false
+*.mysql linguist-vendored=false
